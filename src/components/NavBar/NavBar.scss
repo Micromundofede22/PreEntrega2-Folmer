@@ -1,0 +1,35 @@
+.header {
+    background-color: darkgreen;
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    height: max-content;
+
+    .header__container {
+        max-width: 70%;
+        display: flex;
+        margin: 0 auto;
+        padding: 10px 20px 0px 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo{
+            margin: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+
+
+            .navbar__link {
+                font-size: 16px;
+                font-weight: 600;
+                color: white;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+    }
+}

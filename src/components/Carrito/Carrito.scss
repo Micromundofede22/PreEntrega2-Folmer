@@ -1,0 +1,19 @@
+.carrito-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carrito-icon{
+       margin: 10px;
+       font-size: 40px;
+       color: white;
+    }
+    
+    .carrito-contador{
+        color: white;
+        font-size: 20px;
+        background-color: red;
+        border-radius: 40%;
+    }
+}
+
