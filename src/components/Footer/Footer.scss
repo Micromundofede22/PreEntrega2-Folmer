@@ -1,0 +1,31 @@
+.footer {
+    width: 100vw;
+    padding: 10px;
+
+
+
+    .footer-contenedor {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .footer-redes {
+            .footer-redes__link {
+                font-size: 30px;
+                color: white;
+                margin: 10px;
+            }
+        }
+
+        .footer-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            font-style:oblique;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}

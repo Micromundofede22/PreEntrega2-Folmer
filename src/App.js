@@ -2,17 +2,34 @@ import "./App.scss"
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { NavBar } from './components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from "./components/Carousel/Carousel";
+import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Inicio from "./components/Inicio/Inicio";
+
+
 
 
 function App() {
   return (
-    <div className='app-container'>
-        <NavBar/>
-        <ItemListContainer gree={"Somos decoración y reflexión"} />
-        <Carousel></Carousel>
-    </div>
+    <BrowserRouter>
+
+      <div className='app-container'>
+        <NavBar />
+
+      
+      <Routes>
+
+        <Route path="/" element={<Inicio />} />
+        <Route path="/productos" element={<ItemListContainer />} />
+        <Route path="*" element={<Navigate to={"/productos"}/> }/>
+
+      </Routes>
+      </div>
+      <Footer />
+
+    </BrowserRouter>
+
   );
-}
+};
 
 export default App;

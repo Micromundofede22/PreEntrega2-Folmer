@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "nombre": "Berlin",
+        "precio": 3000,
+        "img": "./img/Terrarios/berlin.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 2,
+        "nombre": "Ámsterdam",
+        "precio": 6000,
+        "img": "./img/Terrarios/amsterdam.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 3,
+        "nombre": "Londres",
+        "precio": 7000,
+        "img": "./img/Terrarios/londres.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 4,
+        "nombre": "Beijing",
+        "precio": 12000,
+        "img": "./img/Terrarios/beijing.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 5,
+        "nombre": "Alemania",
+        "precio": 12000,
+        "img": "./img/Terrarios/alemania.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 6,
+        "nombre": "Roma",
+        "precio": 12000,
+        "img": "./img/Terrarios/roma.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 7,
+        "nombre": "Triangulo",
+        "precio": 12000,
+        "img": "./img/Terrarios/triangulo.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 8,
+        "nombre": "Recife",
+        "precio": 12000,
+        "img": "./img/Terrarios/recife.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 9,
+        "nombre": "Triple Frontera",
+        "precio": 12000,
+        "img": "./img/Terrarios/triple.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 10,
+        "nombre": "Espania",
+        "precio": 12000,
+        "img": "./img/Terrarios/espania.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 11,
+        "nombre": "Galápagos",
+        "precio": 12000,
+        "img": "./img/Terrarios/galapagos.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 12,
+        "nombre": "Kazajistán",
+        "precio": 12000,
+        "img": "./img/Terrarios/kazajistan.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 13,
+        "nombre": "Egipto",
+        "precio": 12000,
+        "img": "./img/Terrarios/egipto.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 14,
+        "nombre": "Bilbao",
+        "precio": 12000,
+        "img": "./img/Terrarios/bilbao.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    },
+    {
+        "id": 15,
+        "nombre": "Biósfera",
+        "precio": 12000,
+        "img": "./img/Terrarios/biosfera.jpg",
+        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "categoria": "terrarios" 
+    }
+]
