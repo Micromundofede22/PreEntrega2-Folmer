@@ -3,6 +3,7 @@ import { pedirDatos } from "../../funciones/pedirDatos";
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.scss"
 import Spinner from 'react-bootstrap/Spinner';
+import { useParams } from "react-router-dom";
 
 
 
@@ -12,11 +13,18 @@ const ItemListContainer = () => {
     const [cargando, setCargando] = useState(true)
 
 
+    const {categoriaId}= useParams()
+
     useEffect(() => {
         setCargando(true)
         pedirDatos()
             .then((res) => {
-                setProductos(res)
+                if (categoriaId) {
+                    setProductos( res.filter((prod)=> prod.categoria === categoriaId) ) 
+                }else {
+                    setProductos(res)
+                }
+                
             })
             .catch((rej) => {
                 console.log(rej)
@@ -24,7 +32,7 @@ const ItemListContainer = () => {
             .finally(() => {
                 setCargando(false)
             })
-    }, [])
+    }, [categoriaId])
 
 
 

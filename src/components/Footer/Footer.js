@@ -7,12 +7,12 @@ import { useState, useEffect } from "react";
 
 function Footer() {
 
-    const[color, setColor]= useState("green");
+    const[color, setColor]= useState("darkgreen");
 
     useEffect(()=>{
         function moverMouse(evento) {
             if (evento.clientX < window.innerWidth / 2) {
-                setColor ("green")
+                setColor ("darkgreen")
             } else {
                 setColor("black")
             }

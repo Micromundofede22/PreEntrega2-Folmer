@@ -7,7 +7,7 @@ export const pedirDatos = () => {
             //     if (bool) {
             resolve(TERRARIOS)
             //     } else {
-            //         reject ("petitorio anulado. disculpe")
+            //         reject ("petitorio anulado. Disculpe")
             //     }
         }, 1500)
     })

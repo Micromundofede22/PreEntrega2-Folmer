@@ -1,15 +1,12 @@
+import "./Inicio.scss"
+import Slider from "../Slider/Slider"
 
 
+const Inicio = () => {
 
-
-const Inicio=()=>{
-
-
-
-    return(
+    return (
         <div>
-            <h1>Nosotros</h1>
-            <hr></hr>
+            <Slider/>
         </div>
     )
 }
