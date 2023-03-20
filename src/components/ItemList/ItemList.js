@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 
 const ItemList = ({props, slogan}) => {
@@ -10,7 +11,7 @@ const ItemList = ({props, slogan}) => {
             <p className="list-container__subtitle">{slogan}</p>
             <hr></hr>
 
-            <div className='tarjeta-cont'>
+            <div  className='tarjeta-cont'>
                 {props.map((el) => (
                     <div key={el.id} className="tarjeta">
                         <img src={el.img} className="tarjeta-img" alt={`${el.nombre}`} />

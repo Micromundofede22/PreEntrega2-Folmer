@@ -1,0 +1,32 @@
+.portada-contenedor{
+    height: 100vh;
+    background-image: url("./../../assets/portada.jpg");
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+
+    
+    .contenedor-img{
+        margin-top: 3rem;
+    }
+        .portada-img{
+            width: 360px;
+    }
+
+    .portada-titulo{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 0;
+    }
+    .portada-subt{
+        color: wheat;
+        font-size: 2rem;
+        font-style: italic;
+        margin: 0;
+
+    }
+}
