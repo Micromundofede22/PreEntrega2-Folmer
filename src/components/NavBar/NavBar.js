@@ -10,7 +10,7 @@ export const NavBar = () => {
     return (
         <header className="header">
             <div className="header__container">
-                <img src="https://github.com/Micromundofede22/PF-Folmer/blob/main/imagenes/logoblanco.png?raw=true" className="header__logo" alt="logo" />
+                <img src="./img/Logos/logoblanco.png" className="header__logo" alt="logo" />
 
                 <motion.nav 
                     className="navbar" >

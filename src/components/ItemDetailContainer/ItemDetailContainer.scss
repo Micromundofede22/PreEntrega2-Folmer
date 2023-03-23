@@ -1,7 +1,9 @@
 .detail-contenedor{
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 4rem 2rem 4rem 2rem;
+    box-shadow: 10px 10px 10px rgba(26,137,63,255);
+    border-radius: 5%;
 
     .detail-img{
         width: 600px;

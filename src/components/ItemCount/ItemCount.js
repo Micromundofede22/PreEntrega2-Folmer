@@ -3,6 +3,7 @@ import { GrSubtractCircle } from "react-icons/gr";
 
 
 
+
 const ItemCount= ({max, cantidad, setCantidad, agregar}) => {
 
     const handleRestar= () => {

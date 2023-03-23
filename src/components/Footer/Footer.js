@@ -12,7 +12,7 @@ function Footer() {
     useEffect(()=>{
         function moverMouse(evento) {
             if (evento.clientX < window.innerWidth / 2) {
-                setColor ("darkgreen")
+                setColor ("rgba(26,137,63,255)")
             } else {
                 setColor("black")
             }
@@ -24,7 +24,7 @@ function Footer() {
         
         <footer style={{background: color}} className="footer">
             <div className="footer-contenedor">
-                <img src="https://github.com/Micromundofede22/PF-Folmer/blob/main/imagenes/logoblanco.png?raw=true" className="footer-logo" alt="logo" />
+                <img src="./img/Logos/logoblanco.png" className="footer-logo" alt="logo" />
 
 
                 <div>
@@ -37,7 +37,7 @@ function Footer() {
                 </div>
                 </div>
 
-                <p className="footer-text">Somos diseño y decoración...</p>
+                <p className="footer-text">Somos decoración y reflexión...</p>
 
             </div>
 

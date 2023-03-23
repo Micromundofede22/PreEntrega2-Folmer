@@ -47,7 +47,7 @@ const ItemListContainer = () => {
                     ?
                     <SpinnerVerde/>
                     : <ItemList
-                        props={productos}
+                        datosProd={productos}
                         categoriaSub={categoriaId ? categoriaId.toUpperCase() : "PRODUCTOS"}
                     />
             }

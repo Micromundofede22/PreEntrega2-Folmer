@@ -27,14 +27,11 @@ const ItemDetailContainer=()=>{
 
     return(
         <div>
-            <h1>Detalles</h1>
-
             {
                 cargando
                 ? 
                 <SpinnerVerde/>
                 : <ItemDetail item={item}/>
-
             }
         </div>
     )
