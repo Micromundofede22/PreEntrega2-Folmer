@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { pedirDatos } from "../../funciones/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
-import Spinner from 'react-bootstrap/Spinner';
+import SpinnerVerde from "../Spinner/SpinnerVerde"
 
 
 const ItemDetailContainer=()=>{
@@ -22,7 +22,7 @@ const ItemDetailContainer=()=>{
         .finally(()=>{
             setCargando(false)
         })
-    }, [])
+    }, [itemId])
 
 
     return(
@@ -31,9 +31,8 @@ const ItemDetailContainer=()=>{
 
             {
                 cargando
-                ? <div className="row justify-content-center">
-                    <Spinner animation="grow" className="list-spinner" />
-                </div>
+                ? 
+                <SpinnerVerde/>
                 : <ItemDetail item={item}/>
 
             }

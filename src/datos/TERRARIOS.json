@@ -5,7 +5,22 @@
         "precio": 3000,
         "img": "/img/Terrarios/berlin.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]
     },
     {
         "id": 2,
@@ -13,7 +28,22 @@
         "precio": 6000,
         "img": "/img/Terrarios/amsterdam.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ] 
     },
     {
         "id": 3,
@@ -21,7 +51,22 @@
         "precio": 7000,
         "img": "/img/Terrarios/londres.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 4,
@@ -29,127 +74,367 @@
         "precio": 12000,
         "img": "/img/Terrarios/beijing.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 5,
         "nombre": "Alemania",
-        "precio": 12000,
+        "precio": 10000,
         "img": "/img/Terrarios/alemania.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 6,
         "nombre": "Roma",
-        "precio": 12000,
+        "precio": 6500,
         "img": "/img/Terrarios/roma.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 7,
         "nombre": "Triangulo",
-        "precio": 12000,
+        "precio": 3800,
         "img": "/img/Terrarios/triangulo.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 8,
         "nombre": "Recife",
-        "precio": 12000,
+        "precio": 7000,
         "img": "/img/Terrarios/recife.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 9,
         "nombre": "Triple Frontera",
-        "precio": 12000,
+        "precio": 7000,
         "img": "/img/Terrarios/triple.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 10,
         "nombre": "España",
-        "precio": 12000,
+        "precio": 5000,
         "img": "/img/Terrarios/espania.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 11,
         "nombre": "Galápagos",
-        "precio": 12000,
+        "precio": 7000,
         "img": "/img/Terrarios/galapagos.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 12,
         "nombre": "Kazajistán",
-        "precio": 12000,
+        "precio": 6500,
         "img": "/img/Terrarios/kazajistan.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 13,
         "nombre": "Egipto",
-        "precio": 12000,
+        "precio": 4000,
         "img": "/img/Terrarios/egipto.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 14,
         "nombre": "Bilbao",
-        "precio": 12000,
+        "precio": 8000,
         "img": "/img/Terrarios/bilbao.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 15,
         "nombre": "Biósfera",
-        "precio": 12000,
+        "precio": 13000,
         "img": "/img/Terrarios/biosfera.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "terrarios" 
+        "categoria": "terrarios",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 16,
         "nombre": "Nueva York",
-        "precio": 12000,
+        "precio": 6000,
         "img": "/img/Lamparas/ny.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "lamparas" 
+        "categoria": "lamparas",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 17,
         "nombre": "París",
-        "precio": 12000,
+        "precio": 7500,
         "img": "/img/Lamparas/paris.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "lamparas" 
+        "categoria": "lamparas",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ]  
     },
     {
         "id": 18,
         "nombre": "Rusia",
-        "precio": 12000,
+        "precio": 6000,
         "img": "/img/Lamparas/rusia.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "lamparas"
+        "categoria": "lamparas",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ] 
     },
     {
         "id": 19,
         "nombre": "Dominica",
-        "precio": 12000,
+        "precio": 10000,
         "img": "/img/LamparaColg/dominica.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "lamparas"
+        "categoria": "lamparas",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ] 
     },
     {
         "id": 20,
@@ -157,6 +442,21 @@
         "precio": 12000,
         "img": "/img/LamparaColg/fiyi.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
-        "categoria": "lamparas"
+        "categoria": "lamparas",
+        "stock":10,
+        "colorBorde":[
+            {
+                "value": "negro",
+                "label": "Negro"
+            },
+            {
+                "value": "cobre",
+                "label": "Cobre"
+            },
+            {
+                "value": "plata",
+                "label": "Plata"
+            }
+        ] 
     }
 ]

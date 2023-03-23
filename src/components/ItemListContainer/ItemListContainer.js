@@ -1,9 +1,10 @@
+import "./ItemListContainer.scss"
 import { useEffect, useState } from "react"
 import { pedirDatos } from "../../funciones/pedirDatos";
 import ItemList from "../ItemList/ItemList";
-import "./ItemListContainer.scss"
-import Spinner from 'react-bootstrap/Spinner';
 import { useParams } from "react-router-dom";
+import SpinnerVerde from "../Spinner/SpinnerVerde";
+
 
 
 
@@ -13,18 +14,18 @@ const ItemListContainer = () => {
     const [cargando, setCargando] = useState(true)
 
 
-    const {categoriaId}= useParams()
+    const { categoriaId } = useParams()
 
     useEffect(() => {
         setCargando(true)
         pedirDatos()
             .then((res) => {
                 if (categoriaId) {
-                    setProductos( res.filter((prod)=> prod.categoria === categoriaId) ) 
-                }else {
+                    setProductos(res.filter((prod) => prod.categoria === categoriaId))
+                } else {
                     setProductos(res)
                 }
-                
+
             })
             .catch((rej) => {
                 console.log(rej)
@@ -34,6 +35,8 @@ const ItemListContainer = () => {
             })
     }, [categoriaId])
 
+    // fondo
+   
 
 
     return (
@@ -41,10 +44,12 @@ const ItemListContainer = () => {
             {/* Antes de la promesa, "cargando" es true, me muestra spiner. Cuando finaliza la promesa, set cargando es false y se carga mi ItemList */}
             {
                 cargando
-                    ? <div className="row justify-content-center">
-                        <Spinner animation="grow" className="list-spinner" />
-                    </div>
-                    : <ItemList props={productos} slogan={"Somos decoración y reflexión..."} />
+                    ?
+                    <SpinnerVerde/>
+                    : <ItemList
+                        props={productos}
+                        categoriaSub={categoriaId ? categoriaId.toUpperCase() : "PRODUCTOS"}
+                    />
             }
         </div>
     )

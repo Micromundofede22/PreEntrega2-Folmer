@@ -8,8 +8,8 @@ import Portada from "../Portada/Portada"
 const Inicio = () => {
 
     return (
-        <div>
-            <Portada/>
+        <div className='inicio-container'>
+            <Portada subtitulo={"Decoración y reflexión..."} />
             <Slider imgT={images} />
             
         </div>

@@ -3,7 +3,7 @@ import isocolor from "./../../assets/isocolor.png"
 import { motion } from "framer-motion"
 
 
-const Portada = () => {
+const Portada = ({subtitulo}) => {
 
     return (
         <motion.div className="portada-contenedor">
@@ -19,9 +19,9 @@ const Portada = () => {
 
             <motion.h1
                 whileinview={{color:"black"}}
-                initial={{y:0}} animate={{ y: -200, x:50, scale:2.5, style:{fontStyle:"italic"}}}
+                initial={{x:0,y:0}} animate={{ y: -200, x:50, scale:2.5}}
                 transition={{ duration: 2 }}
-                // viewport={{}}
+                
                 
                 drag="y" 
                 className="portada-titulo">Micromundo</motion.h1>
@@ -30,7 +30,7 @@ const Portada = () => {
             <motion.h3 
             initial={{ x: 0, y: 0, opacity:0}} animate={{ x: 200, y:-200, opacity:1 }}
             transition={{ duration: 2 }}
-            className="portada-subt">Decoración y reflexión...</motion.h3>
+            className="portada-subt">{subtitulo}</motion.h3>
 
 
 

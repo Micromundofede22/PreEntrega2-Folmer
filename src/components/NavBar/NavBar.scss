@@ -4,6 +4,7 @@
     z-index: 2;
     top: 0px;
     height: max-content;
+    width: 100vw;
 
     .header__container {
         max-width: 70%;
@@ -24,7 +25,9 @@
 
 
             .navbar__link {
-                font-size: 16px;
+                text-decoration: none;
+                font-size: 18px;
+                margin: 0.4rem;
                 font-weight: 600;
                 color: white;
                 text-transform: uppercase;
