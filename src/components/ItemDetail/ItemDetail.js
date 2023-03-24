@@ -1,20 +1,24 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Link } from "react-router-dom"
+import { CarritoContexto } from "../../Context/CarritoContexto"
 import ItemCount from "../ItemCount/ItemCount"
 import Select from "../Select/Select"
 
 const ItemDetail = ({ item }) => {
 
-    const [cantidad, setCantidad]=useState(1)
-    const [color, setColor]= useState("negro")
+    const { agregarAlCarrito, existeEnCarrito } = useContext(CarritoContexto)
+
+    const [cantidad, setCantidad] = useState(1)
+    const [color, setColor] = useState("negro")
 
 
-    const handleAgregar= ()=>{
-        const itemAgregado={
+    const handleAgregar = () => {
+        const itemAgregado = {
             ...item,
             cantidad,
             color
         }
-        console.log(itemAgregado)
+        agregarAlCarrito(itemAgregado)
     }
 
 
@@ -26,15 +30,20 @@ const ItemDetail = ({ item }) => {
                 <p className="detail-descrip">Descripción: {item.medidas}</p>
                 <p className="detail-precio">Precio: ${item.precio}</p>
 
-                <Select 
-                set={setColor}
-                opcColor={item.colorBorde}/>
+                <Select
+                    set={setColor}
+                    opcColor={item.colorBorde} />
 
-                <ItemCount 
-                max={item.stock}
-                cantidad={cantidad}
-                setCantidad={setCantidad}
-                agregar={handleAgregar} />
+                {
+                    existeEnCarrito(item.id)
+                        ? <Link to="/carrito" >Terminar compra</Link>
+                        : <ItemCount
+                            max={item.stock}
+                            cantidad={cantidad}
+                            setCantidad={setCantidad}
+                            agregar={handleAgregar} />
+                }
+
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import Item from "../Item/Item"
 
 
 
-const ItemList = ({ datosProd, categoriaSub,}) => {
+const ItemList = ({ datosProd, categoriaSub, }) => {
 
     return (
         <div >
@@ -14,8 +14,9 @@ const ItemList = ({ datosProd, categoriaSub,}) => {
 
             <div className='list-container'>
                 <div className='tarjeta-cont'>
-                    {datosProd.map((cadaProducto) => (<Item key={cadaProducto.id} item={cadaProducto}/>
-                       ))
+                    {datosProd.map((cadaProducto, index) => (
+                    <Item key={cadaProducto.id} item={cadaProducto} index={index} />
+                    ))
                     }
                 </div>
             </div>
