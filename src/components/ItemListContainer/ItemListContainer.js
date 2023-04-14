@@ -1,11 +1,10 @@
 import "./ItemListContainer.scss"
 import { useEffect, useState } from "react"
-import { pedirDatos } from "../../funciones/pedirDatos";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import SpinnerVerde from "../Spinner/SpinnerVerde";
-
-
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { dataBase } from "../../firebase/config"
 
 
 
@@ -18,24 +17,25 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         setCargando(true)
-        pedirDatos()
+        //   1. armar una referencia sync
+        const productoRef = collection(dataBase, "productos")
+        const q = categoriaId
+            ? query(productoRef, where("categoria", "==", categoriaId))
+            : productoRef
+        //   2. llamar a esa referencia async
+        getDocs(q)
             .then((res) => {
-                if (categoriaId) {
-                    setProductos(res.filter((prod) => prod.categoria === categoriaId))
-                } else {
-                    setProductos(res)
-                }
-
+                setProductos(res.docs.map((doc) => {
+                    return {
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                }))
             })
-            .catch((rej) => {
-                console.log(rej)
-            })
-            .finally(() => {
-                setCargando(false)
-            })
+            .finally(() => setCargando(false))
     }, [categoriaId])
 
-   
+
 
 
     return (
@@ -44,10 +44,12 @@ const ItemListContainer = () => {
             {
                 cargando
                     ?
-                    <SpinnerVerde/>
+                    <SpinnerVerde />
                     : <ItemList
                         datosProd={productos}
                         categoriaSub={categoriaId ? categoriaId.toUpperCase() : "PRODUCTOS"}
+                        categoria={categoriaId}
+
                     />
             }
         </div>

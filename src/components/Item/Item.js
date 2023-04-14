@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 
 const cajaVariant = {
@@ -13,7 +14,10 @@ const cajaVariant = {
     ),
 }
 
-const Item = ({ item, index }) => {
+
+
+const Item = ({ item, index, categoria }) => {
+    
     const control = useAnimation()
     const [ref, inView] = useInView()
 
@@ -29,7 +33,7 @@ const Item = ({ item, index }) => {
     return (
         <motion.div className="tarjeta"
             ref={ref}
-            custom={{ delay: (index + 1 ) * 0.2 }}
+            custom={{ delay: (index + 1 ) * 0.03 }}
             initial="hidden"
             animate={control}
             variants={cajaVariant}
@@ -43,7 +47,12 @@ const Item = ({ item, index }) => {
                 whileTap={{ scale: 0.7 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}>
 
-                <Link to={`/detail/${item.id}`} className="tarjeta-link">Ver más</Link>
+                <Link to={`/detail/${item.id}`}
+                 className={
+                    categoria === "lamparas"
+                    ? "tarjeta-link__lampara btn"
+                    : "tarjeta-link btn"
+                 }><FaExternalLinkSquareAlt className="mx-2 my-2" />Ver más</Link>
 
             </motion.div>
         </motion.div>

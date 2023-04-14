@@ -1,7 +1,9 @@
-import Carrito from "../Carrito/Carrito"
+// import CarritoContador from "../Carrito/CarritoContador"
 import "./NavBar.scss"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+
+import CarritoMui from "../Carrito/CarritoMui"
 
 
 
@@ -30,7 +32,8 @@ export const NavBar = () => {
 
                 </motion.nav>
 
-                <Carrito />
+                {/* <CarritoContador /> */}
+                <CarritoMui/>
 
             </div>
         </header>

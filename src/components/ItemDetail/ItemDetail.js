@@ -23,25 +23,42 @@ const ItemDetail = ({ item }) => {
 
 
     return (
-        <div className="detail-contenedor">
+        <div
+            className="detail-contenedor">
             <img className="detail-img" src={item.img} alt={item.name} />
             <div className="detail-contenedorInfo">
                 <p className="detail-nombre">{item.nombre}</p>
+                {item.stock <= 3 && <p>Solo quedan {item.stock} unidades</p>}
                 <p className="detail-descrip">Descripción: {item.medidas}</p>
                 <p className="detail-precio">Precio: ${item.precio}</p>
 
                 <Select
                     set={setColor}
-                    opcColor={item.colorBorde} />
+                    opcColor={item.colorBorde}
+                    categoriaColor={item.categoria}
+                />
 
                 {
-                    existeEnCarrito(item.id)
-                        ? <Link to="/carrito" >Terminar compra</Link>
-                        : <ItemCount
-                            max={item.stock}
-                            cantidad={cantidad}
-                            setCantidad={setCantidad}
-                            agregar={handleAgregar} />
+
+                    item.stock === 0
+                        ? <div>
+                            <h3>No hay stock</h3>
+                            <button className="btn btn-success">Volver a productos</button>
+                        </div>
+                        :
+                        existeEnCarrito(item.id)
+                            ? <Link to="/carrito"
+                                className={`boton w-25
+                                        ${item.categoria === "lamparas"
+                                        ? "boton-lamparas"
+                                        : "boton-terrarios"}`}
+                            >Ir al carrito</Link>
+                            : <ItemCount
+                                max={item.stock}
+                                cantidad={cantidad}
+                                setCantidad={setCantidad}
+                                agregar={handleAgregar}
+                                categoria={item.categoria} />
                 }
 
             </div>

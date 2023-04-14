@@ -1,0 +1,8 @@
+.link-carrito{
+    visibility: hidden;
+
+    &-active{
+        visibility: visible;
+    }
+}
+

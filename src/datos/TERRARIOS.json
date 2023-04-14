@@ -6,7 +6,7 @@
         "img": "/img/Terrarios/berlin.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
         "categoria": "terrarios",
-        "stock":10,
+        "stock":0,
         "colorBorde":[
             {
                 "value": "negro",
@@ -397,7 +397,7 @@
         "img": "/img/Lamparas/rusia.jpg",
         "medidas":"Medidas: Alto: Largo:  Ancho: ",
         "categoria": "lamparas",
-        "stock":10,
+        "stock":8,
         "colorBorde":[
             {
                 "value": "negro",

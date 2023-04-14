@@ -1,7 +1,7 @@
 import "./Select.scss"
 
 
-const Select= ({set, opcColor}) => {
+const Select= ({set, opcColor, categoriaColor}) => {
 
     const handleSelect= (e) => {
         set(e.target.value)
@@ -10,7 +10,13 @@ const Select= ({set, opcColor}) => {
     return(
             <div className="select-contenedor">
                 <p className="texto">Color de bordes:</p>
-                <select onChange={handleSelect} className="select">
+                <select onChange={handleSelect}
+                 className={`select ${
+                    categoriaColor === "lamparas"
+                    ? "select-lamparas"
+                    : "select-terrarios"
+                 }`}>
+                    
                 {
                     opcColor.map((opc)=>
                     <option 

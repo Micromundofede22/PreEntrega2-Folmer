@@ -1,0 +1,19 @@
+.cantidad-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+
+    .carrito-cantidad{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    // .icon-restar{
+    //     // font-size: 1.7rem;
+    // }
+
+    // .icon-sumar{
+    //     // font-size: 1.7rem;
+    // }
+}

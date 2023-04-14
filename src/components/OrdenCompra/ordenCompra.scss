@@ -1,0 +1,22 @@
+.orden-contenedor{
+    width: 100vw;
+    height: 90vh;
+    background-image: url("./../../assets/portada.jpg");
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .orden-mensaje{
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .orden-numero{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}

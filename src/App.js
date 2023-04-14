@@ -6,31 +6,17 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Inicio from "./components/Inicio/Inicio";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import { CarritoContexto } from "./Context/CarritoContexto";
-import { useState } from "react";
+import { CarritoProveedor } from "./Context/CarritoContexto";
+import { Carrito } from "./components/SectorCarrito/Carrito";
+import OrdenCompra from "./components/OrdenCompra/OrdenCompra";
 
 
 
 
 function App() {
 
-const[carrito,setCarrito]=useState([])
-// centralizo mi funcionalidad de agregar, asi distintos componentes acceden a esto
-
-const agregarAlCarrito=(item)=>{
-    setCarrito([...carrito, item])
-}
-
-const existeEnCarrito= (id)=>{
-  return carrito.some((el)=> el.id === id)
-}
-
   return (
-    <CarritoContexto.Provider value={{
-      carrito,
-      agregarAlCarrito,
-      existeEnCarrito
-    }}>
+    <CarritoProveedor>
 
       <BrowserRouter>
         <div >
@@ -38,9 +24,11 @@ const existeEnCarrito= (id)=>{
 
           <Routes>
             <Route path="/" element={<Inicio />} />
-            <Route path="/productos" element={<ItemListContainer fondo={""} categoriaSub={""} />} />
-            <Route path="/productos/:categoriaId" element={<ItemListContainer fondo={""} categoriaSub={""} />} />
+            <Route path="/productos" element={<ItemListContainer categoriaSub={""} />} />
+            <Route path="/productos/:categoriaId" element={<ItemListContainer categoriaSub={""} />} />
             <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/carrito" element={<Carrito/>}/>
+            <Route path="/ordencompra" element={<OrdenCompra/>}/>
             <Route path="*" element={<Navigate to={"/productos"} />} />
           </Routes>
 
@@ -49,8 +37,7 @@ const existeEnCarrito= (id)=>{
 
       </BrowserRouter>
 
-    </CarritoContexto.Provider>
-
+    </CarritoProveedor>
   );
 };
 
