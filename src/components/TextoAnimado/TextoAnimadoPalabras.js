@@ -9,7 +9,7 @@ const TextoAnimadoPalabras = ({ text }) => {
         visible: (i = 1) => ({
             opacity: 1,
             transition: {
-                staggerChildren: 0.12, delayChildren: 0.4 * i
+                staggerChildren: 0.12, delayChildren: 3 * i
             }
         })
     }
@@ -18,7 +18,7 @@ const TextoAnimadoPalabras = ({ text }) => {
         visible: {
             opacity: 1,
             // y: 0,
-            x:0,
+            x: 0,
             transition: {
                 type: "spring",
                 damping: 12,
@@ -28,7 +28,7 @@ const TextoAnimadoPalabras = ({ text }) => {
         hidden: {
             opacity: 0,
             // y: -20,
-            x:-20,
+            x: -20,
             transition: {
                 type: "spring",
                 damping: 12,
@@ -47,12 +47,11 @@ const TextoAnimadoPalabras = ({ text }) => {
             animate="visible">
 
             {
-            frase.map((palabra, index) => (
-                <motion.span
-                    variants={child}
-                    
-                    style={{ marginRight: "6px" }} key={index}> {palabra} </motion.span>
-            ))
+                frase.map((palabra, index) => (
+                    <motion.span
+                        variants={child}
+                        style={{ marginRight: "6px", fontSize: "30px", fontWeight: "bold" }} key={index}> {palabra} </motion.span>
+                ))
             }
 
         </motion.div>

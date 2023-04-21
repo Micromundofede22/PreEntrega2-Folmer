@@ -7,7 +7,7 @@ const Slider = ({imgT}) => {
     return (
         <motion.div  className="slider-container" >
             <motion.div 
-            transition={{duration:20}}
+            transition={{duration:100}}
             initial={{x:0}} animate={{x:-3200}}
             className="slider" drag="x" dragConstraints={{right:0, left:-3200 }} dragMomentum={true}>
                 {imgT.map((image) => (

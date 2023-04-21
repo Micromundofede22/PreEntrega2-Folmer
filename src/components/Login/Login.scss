@@ -1,0 +1,40 @@
+.login-contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../../assets/portada.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+
+    .login{
+        width: 30%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 30px;
+
+        .campos{
+            text-shadow: 5px 0px 10px rgb(136, 255, 93);
+            font-weight: 500;
+            background-color: transparent;
+        }
+
+        .boton{
+            background-color: rgba(26,137,63,255);
+            color: white;
+            font-weight: 500;
+            padding: 5px;
+            margin: 10px;
+            height: min-content;
+            text-decoration: none;
+
+            &:hover{
+                background-color: black;
+                box-shadow: 5px 5px 5px rgba(26,137,63,255);
+            }
+            
+        }
+
+    }
+}

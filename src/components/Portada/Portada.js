@@ -15,7 +15,7 @@ const Portada = ({subtitulo}) => {
                     viewport={{}}
                     animate={{ x: -380, }}
                     drag="x" dragConstraints={{ right: 0, left: -5 }} 
-                    className="portada-img" src={isocolor} alt="Hojas" />
+                    className="portada-img" src={isocolor} alt="logo" />
             </motion.div>
 
             <motion.h1

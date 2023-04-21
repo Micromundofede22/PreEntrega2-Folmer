@@ -9,7 +9,7 @@ const TextoAnimadoLetras = ({ text }) => {
         visible: (i = 1) => ({
             opacity: 1,
             transition: {
-                staggerChildren: 0.02, delayChildren: 0.4 * i
+                staggerChildren: 0.02, delayChildren: 1 * i
             }
         })
     }

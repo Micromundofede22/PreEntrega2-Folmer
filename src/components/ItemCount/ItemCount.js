@@ -7,7 +7,6 @@ import { IoPrism } from "react-icons/io5";
 
 
 
-
 const ItemCount = ({ max, cantidad, setCantidad, agregar, categoria }) => {
 
     const handleRestar = () => {
@@ -57,6 +56,7 @@ const ItemCount = ({ max, cantidad, setCantidad, agregar, categoria }) => {
                         : <RiPlantLine className="fs-5" />}
                 </button>
             </div>
+
 
             <hr />
             <button

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import { CarritoContexto } from "../../Context/CarritoContexto"
 import ItemCount from "../ItemCount/ItemCount"
 import Select from "../Select/Select"
+import { toast, ToastContainer, Zoom } from "react-toastify";
+
 
 const ItemDetail = ({ item }) => {
 
@@ -16,9 +18,19 @@ const ItemDetail = ({ item }) => {
         const itemAgregado = {
             ...item,
             cantidad,
-            color
+            color,
         }
         agregarAlCarrito(itemAgregado)
+
+        toast.success("Agregado al carito",
+            {
+                position: toast.POSITION.BOTTOM_RIGHT,
+                className: "foo-bar",
+                theme: "dark",
+                transition: Zoom,
+                autoClose: 1500
+            })
+
     }
 
 
@@ -60,6 +72,7 @@ const ItemDetail = ({ item }) => {
                                 agregar={handleAgregar}
                                 categoria={item.categoria} />
                 }
+                <ToastContainer />
 
             </div>
         </div>

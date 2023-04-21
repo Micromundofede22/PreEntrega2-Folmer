@@ -5,23 +5,24 @@ import { BsFillTrash3Fill } from "react-icons/bs";
 import ImageAvatars from "../Avatar/Avatar";
 import CantidadesCarrito from "../CantidadesCarrito/CantidadesCarrito";
 import { Link } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 
 export const Carrito = () => {
 
-    const { carrito, vaciarCarrito, removerItem, totalCompra } = useContext(CarritoContexto)
+    const { carrito, vaciarCarritoAlerta, removerItem, totalCompra } = useContext(CarritoContexto)
 
 
     return (
         <div className="carrito-contenedor">
 
-            <h1 className="carrito-titulo">A un paso de tener tu terrario<ImageAvatars img={"./img/Caricatura/terrario.jpg"} /></h1>
+            <h1 className="carrito-titulo">A un paso de tener tu Micromundo<ImageAvatars img={"./img/Caricatura/terrario.jpg"} /></h1>
             <hr></hr>
             {
                 carrito.map((prod) => (
                     <div className={`carrito-item ${prod.categoria === "lamparas"
-                            ? "carrito-item-rosa"
-                            : "carrito-item-verde"
+                        ? "carrito-item-rosa"
+                        : "carrito-item-verde"
 
                         }
                         
@@ -31,7 +32,7 @@ export const Carrito = () => {
                         <h3 className="carrito-nombre">{prod.nombre}</h3>
                         <span className="carrito-unitario">${prod.precio}</span>
 
-                        <CantidadesCarrito cantidad={prod.cantidad} id={prod.id} stock={prod.stock}/>
+                        <CantidadesCarrito cantidad={prod.cantidad} id={prod.id} stock={prod.stock} />
 
                         <span className="carrito-total">Total: $ {prod.precio * prod.cantidad}</span>
                         <button onClick={() => removerItem(prod.id)} className="btn btn-danger"><BsFillTrash3Fill /></button>
@@ -39,9 +40,14 @@ export const Carrito = () => {
                 ))
             }
             <hr></hr>
+
+            <button onClick={vaciarCarritoAlerta} className="btn btn-danger boton" >Vaciar Carrito<BsFillTrash3Fill /></button>
+
             <h3 className="carrito-totalcompra">TOTAL: ${totalCompra()}</h3>
-            <button onClick={vaciarCarrito} className="btn btn-success" >Vaciar Carrito</button>
-            <Link to="/ordencompra" className="btn btn-success" >Terminar compra</Link>
+
+            <Link to="/ordencompra" className="btn boton-terminar" >Terminar compra</Link>
+            
+            <ToastContainer/>
         </div>
     )
 }

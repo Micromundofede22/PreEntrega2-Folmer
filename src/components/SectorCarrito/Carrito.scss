@@ -1,68 +1,98 @@
-.carrito-contenedor{
-display: flex;
-flex-direction:column;
-align-items:center ;
-width: 100%;
-background-color:rgba(252, 255, 250, 0.725);
+.carrito-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("./../../../public/img/Fondos/fondoindex.jpg");
+    background-size:cover;
+    background-attachment: fixed;
 
-    .carrito-titulo{
+    .carrito-titulo {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-top: 20px;
+        font-weight:900;
+        background-image: linear-gradient(to right, #020202, #0ea418);
+        background-clip: text;
+        color: transparent;
     }
 
-    .carrito-item{
+    .carrito-item {
         display: flex;
         flex-direction: row;
         width: 80%;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items: center;
         margin: 2%;
         border-radius: 10%;
-        box-shadow: 5px 15px 30px black;
+        box-shadow: 5px 15px 10px black;
 
-        &-verde{
-            background-color: rgba(26,137,63,255);
+        &-verde {
+            background-color: #1a893f41;
         }
-        &-rosa{
-            background-color: #f3a17c;
+
+        &-rosa {
+            background-color: #f3a27c43;
         }
-        
-    
-    
-        .carrito-img{
+
+
+
+        .carrito-img {
             width: 250px;
             border-radius: 10%;
             box-shadow: 10px 10px 30px black;
             
+
         }
-    
-        .carrito-nombre{
+
+        .carrito-nombre {
             margin-left: 1%;
             font-weight: 700;
         }
-    
-        .carrito-unitario{
+
+        .carrito-unitario {
             font-size: 1.5rem;
             font-weight: 600;
         }
-        
-        
-    
-        .carrito-total{
+
+
+
+        .carrito-total {
             font-size: 1.5rem;
             font-weight: 600;
         }
     }
 
-    .carrito-totalcompra{
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 900;
+    }
+
+    .carrito-totalcompra {
         display: flex;
         flex-direction: row;
-        
+        margin: 10px;
         font-size: 2rem;
         font-weight: 700;
         color: red;
+    }
 
+    .boton-terminar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#1a893f;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: 900;
+        box-shadow: 5px 5px 5px black;
+
+        &:hover{
+            background-color: #020202;
+        }
     }
 }

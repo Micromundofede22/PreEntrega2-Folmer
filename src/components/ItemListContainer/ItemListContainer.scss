@@ -41,6 +41,9 @@
         }
 
         .tarjeta-link{
+          display: flex;
+          align-items: center;
+          justify-content: center;
           color: rgb(255, 253, 253);
           font-size: 20px;
           cursor:pointer;
@@ -49,9 +52,18 @@
           background-color: rgba(26,137,63,255);
           box-shadow: 8px 8px 10px black;
           border-radius: 15%;
+          height:40px;
+
+          &:hover{
+            background-color: rgb(155, 224, 152);
+            box-shadow: 8px 8px 8px rgba(26,137,63,255);
+          }
         }
         .tarjeta-link__lampara{
-          
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
           color: rgb(255, 253, 253);
           font-size: 20px;
           cursor:pointer;
@@ -60,6 +72,11 @@
           background-color:#f3a17c;
           box-shadow: 8px 8px 10px black;
           border-radius: 15%;
+
+          &:hover{
+            background-color: #fe7b3e;
+            box-shadow: rgba(166, 144, 144, 0.577);
+          }
         }
       }
     }

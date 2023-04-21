@@ -1,6 +1,5 @@
 import "./ordenCompra.scss";
 import { useContext, useState } from "react";
-import swal from 'sweetalert';
 import { CarritoContexto } from "../../Context/CarritoContexto";
 import { Navigate } from "react-router-dom";
 import { dataBase } from "../../firebase/config";
@@ -77,18 +76,19 @@ const OrdenCompra = () => {
         }
     }
 
+    
 
     if (ordenId) {
         return (
             
-            // swal("Tu compra se registró exitosamente", "Guarda tu número de orden: " + ordenId, "success")
+            
             <div className="orden-contenedor">
                 <h3 className="orden-mensaje">Tu compra se registró exitosamente</h3>
                 <p className="orden-numero">Guarda tu número de orden: <strong className="fw-5">{ordenId}</strong> </p>
             </div>
         )
     }
-
+   
 
     if (carrito.length === 0) {
         return <Navigate to="/productos" />
@@ -98,8 +98,8 @@ const OrdenCompra = () => {
 
 
     return (
-        <div>
-            <h2>Ingresa tus datos</h2>
+        <div className="orden-contenedor">
+            <h2 className="orden-titulo">Ingresa tus datos</h2>
             <hr />
 
             <Formik

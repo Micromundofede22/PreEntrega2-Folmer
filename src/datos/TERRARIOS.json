@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "orden": 1,
         "nombre": "Berlin",
         "precio": 3000,
         "img": "/img/Terrarios/berlin.jpg",
@@ -23,7 +23,7 @@
         ]
     },
     {
-        "id": 2,
+        "orden": 2,
         "nombre": "Ámsterdam",
         "precio": 6000,
         "img": "/img/Terrarios/amsterdam.jpg",
@@ -46,7 +46,7 @@
         ] 
     },
     {
-        "id": 3,
+        "orden": 3,
         "nombre": "Londres",
         "precio": 7000,
         "img": "/img/Terrarios/londres.jpg",
@@ -69,7 +69,7 @@
         ]  
     },
     {
-        "id": 4,
+        "orden": 4,
         "nombre": "Beijing",
         "precio": 12000,
         "img": "/img/Terrarios/beijing.jpg",
@@ -92,7 +92,7 @@
         ]  
     },
     {
-        "id": 5,
+        "orden": 5,
         "nombre": "Alemania",
         "precio": 10000,
         "img": "/img/Terrarios/alemania.jpg",
@@ -115,7 +115,7 @@
         ]  
     },
     {
-        "id": 6,
+        "orden": 6,
         "nombre": "Roma",
         "precio": 6500,
         "img": "/img/Terrarios/roma.jpg",
@@ -138,7 +138,7 @@
         ]  
     },
     {
-        "id": 7,
+        "orden": 7,
         "nombre": "Triangulo",
         "precio": 3800,
         "img": "/img/Terrarios/triangulo.jpg",
@@ -161,7 +161,7 @@
         ]  
     },
     {
-        "id": 8,
+        "orden": 8,
         "nombre": "Recife",
         "precio": 7000,
         "img": "/img/Terrarios/recife.jpg",
@@ -184,7 +184,7 @@
         ]  
     },
     {
-        "id": 9,
+        "orden": 9,
         "nombre": "Triple Frontera",
         "precio": 7000,
         "img": "/img/Terrarios/triple.jpg",
@@ -207,7 +207,7 @@
         ]  
     },
     {
-        "id": 10,
+        "orden": 10,
         "nombre": "España",
         "precio": 5000,
         "img": "/img/Terrarios/espania.jpg",
@@ -230,7 +230,7 @@
         ]  
     },
     {
-        "id": 11,
+        "orden": 11,
         "nombre": "Galápagos",
         "precio": 7000,
         "img": "/img/Terrarios/galapagos.jpg",
@@ -253,7 +253,7 @@
         ]  
     },
     {
-        "id": 12,
+        "orden": 12,
         "nombre": "Kazajistán",
         "precio": 6500,
         "img": "/img/Terrarios/kazajistan.jpg",
@@ -276,7 +276,7 @@
         ]  
     },
     {
-        "id": 13,
+        "orden": 13,
         "nombre": "Egipto",
         "precio": 4000,
         "img": "/img/Terrarios/egipto.jpg",
@@ -299,7 +299,7 @@
         ]  
     },
     {
-        "id": 14,
+        "orden": 14,
         "nombre": "Bilbao",
         "precio": 8000,
         "img": "/img/Terrarios/bilbao.jpg",
@@ -322,7 +322,7 @@
         ]  
     },
     {
-        "id": 15,
+        "orden": 15,
         "nombre": "Biósfera",
         "precio": 13000,
         "img": "/img/Terrarios/biosfera.jpg",
@@ -345,7 +345,7 @@
         ]  
     },
     {
-        "id": 16,
+        "orden": 16,
         "nombre": "Nueva York",
         "precio": 6000,
         "img": "/img/Lamparas/ny.jpg",
@@ -368,7 +368,7 @@
         ]  
     },
     {
-        "id": 17,
+        "orden": 17,
         "nombre": "París",
         "precio": 7500,
         "img": "/img/Lamparas/paris.jpg",
@@ -391,7 +391,7 @@
         ]  
     },
     {
-        "id": 18,
+        "orden": 18,
         "nombre": "Rusia",
         "precio": 6000,
         "img": "/img/Lamparas/rusia.jpg",
@@ -414,7 +414,7 @@
         ] 
     },
     {
-        "id": 19,
+        "orden": 19,
         "nombre": "Dominica",
         "precio": 10000,
         "img": "/img/LamparaColg/dominica.jpg",
@@ -437,7 +437,7 @@
         ] 
     },
     {
-        "id": 20,
+        "orden": 20,
         "nombre": "Fiyi",
         "precio": 12000,
         "img": "/img/LamparaColg/fiyi.jpg",

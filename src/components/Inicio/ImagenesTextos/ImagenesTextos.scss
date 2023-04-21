@@ -1,0 +1,24 @@
+.container-img {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: min-content;
+        justify-content: center;
+
+        .text {
+            background-image: url("./../../../assets/portada.jpg");
+            background-attachment: fixed;
+            background-clip: text;
+            color: transparent;
+            font-size: 4rem;
+            font-weight: 900;
+            
+        }
+    }
+    
+}

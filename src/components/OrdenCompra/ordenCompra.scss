@@ -2,11 +2,19 @@
     width: 100vw;
     height: 90vh;
     background-image: url("./../../assets/portada.jpg");
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .orden-titulo{
+        color: white;
+        font-size: 3rem;
+        text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.356);
+        font-weight: 700;
+    }
 
     .orden-mensaje{
         color: white;

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import SpinnerVerde from "../Spinner/SpinnerVerde";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, orderBy, query, where } from "firebase/firestore";
 import { dataBase } from "../../firebase/config"
 
 
@@ -19,9 +19,9 @@ const ItemListContainer = () => {
         setCargando(true)
         //   1. armar una referencia sync
         const productoRef = collection(dataBase, "productos")
-        const q = categoriaId
+        const q = categoriaId 
             ? query(productoRef, where("categoria", "==", categoriaId))
-            : productoRef
+            : productoRef && query(productoRef, orderBy("orden"))
         //   2. llamar a esa referencia async
         getDocs(q)
             .then((res) => {

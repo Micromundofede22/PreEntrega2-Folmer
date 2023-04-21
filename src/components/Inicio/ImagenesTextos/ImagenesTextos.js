@@ -1,14 +1,8 @@
-import "./Inicio.scss"
-import Slider from "../Slider/Slider"
-import images from "../../exports/images"
-import Portada from "../Portada/Portada"
-import terrario  from "./terrario.jpg";
-import planta from "./planta.jpg";
+import "./ImagenesTextos.scss";
 import { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ImagenesTextos from "./ImagenesTextos/ImagenesTextos";
-import { WhatsApp } from "@mui/icons-material";
+
 
 
 const cajaVariant = {
@@ -20,20 +14,29 @@ const cajaVariant = {
     }),
 }
 
-const movimiento = {
-    antes: { x: -400, opacity: 0, scale: 0.5 },
-    despues: ({ delay }) => ({
+const movimiento1 = {
+    izq: { x: -100, opacity: 0, scale: 0.5 },
+    dere: ({ delay }) => ({
         opacity: 1,
         scale: 1,
         x: 0,
-        transition: { delay, duration: 2 }
+        transition: { delay, duration: 3 }
     }),
+}
 
+const movimiento2 = {
+    derecha: { x: 100, opacity: 0, scale: 0.5 },
+    izquierda: ({ delay }) => ({
+        opacity: 1,
+        scale: 1,
+        x: 0,
+        transition: { delay, duration: 3 }
+    }),
 }
 
 
-const Inicio = () => {
 
+const ImagenesTextos = ({text1, img, text2 }) => {
     const control = useAnimation()
     const [ref, inView] = useInView()
 
@@ -47,27 +50,32 @@ const Inicio = () => {
 
     useEffect(() => {
         if (inView) {
-            control.start("despues")
+            control.start("dere")
         } else {
-            control.start("antes");
+            control.start("izq");
+        }
+    }, [control, inView])
+
+    useEffect(() => {
+        if (inView) {
+            control.start("izquierda")
+        } else {
+            control.start("derecha");
         }
     }, [control, inView])
 
 
-
     return (
-        <div className='inicio-container'>
-            <Portada subtitulo={"Decoración y reflexión..."} />
+       
             <div className="container-img">
                 <div className="text-container">
-                    {/* <TextoAnimadoPalabras text={`A tu casa no le puede faltar un Micromundo...`} /> */}
                     <motion.p className="text"
                         ref={ref}
                         custom={{ delay: 0.3 }}
-                        initial="antes"
+                        initial="izq"
                         animate={control}
-                        variants={movimiento}
-                    >Mi<br />cro<br />mun<br />do</motion.p>
+                        variants={movimiento1}
+                    >{text1}</motion.p>
                 </div>
 
                 <motion.div
@@ -77,19 +85,23 @@ const Inicio = () => {
                     animate={control}
                     variants={cajaVariant} >
 
-                    <img className="img-inicio" src={terrario} alt=""/>
+                    <img className="img-inicio" src={img} alt="caricatura"/>
 
                 </motion.div>
+
+                <div className="text-container">
+                    <motion.p className="text"
+                        ref={ref}
+                        custom={{ delay: 0.3 }}
+                        initial="derecha"
+                        animate={control}
+                        variants={movimiento2}
+                    >{text2}</motion.p>
+                </div>
+
+
             </div>
-
-            <Slider imgT={images} />
-
-            <ImagenesTextos text1={"Llevate gratis"} img={planta} text2={"un libro para reflexionar"} />
-
-            </div>
-
     )
 }
 
-
-export default Inicio
+export default ImagenesTextos

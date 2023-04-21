@@ -1,7 +1,6 @@
+import  TERRARIOS  from "../datos/TERRARIOS.json" assert{type:"json"}
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-
+import {getFirestore, collection, addDoc} from "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBmIQtxyOzJl6CgW7U4TE2Zby1SkRYpizc",
@@ -13,11 +12,12 @@ const firebaseConfig = {
   measurementId: "G-TQ6CF2RJ8N"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
-// getfirestore me conecta con la database de firebase (sería getstorage si quiero conectarme con el servicio de storage)
-export const dataBase= getFirestore (app);
+const dataBase= getFirestore (app);
+const productosRef= collection(dataBase, "productos")
 
-export const auth= getAuth(app)
+TERRARIOS.forEach((item)=>{
+    addDoc(productosRef, item)
+})
 
-export const provider = new GoogleAuthProvider();
