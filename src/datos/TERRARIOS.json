@@ -4,7 +4,7 @@
         "nombre": "Berlin",
         "precio": 3000,
         "img": "/img/Terrarios/berlin.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 17.5cm Largo: 20cm  Ancho: 6cm ",
         "categoria": "terrarios",
         "stock":0,
         "colorBorde":[
@@ -27,7 +27,7 @@
         "nombre": "Ámsterdam",
         "precio": 6000,
         "img": "/img/Terrarios/amsterdam.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 16cm Largo: 23cm  Ancho: 16cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -50,7 +50,7 @@
         "nombre": "Londres",
         "precio": 7000,
         "img": "/img/Terrarios/londres.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 20cm Largo: 18cm  Ancho: 18cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -73,7 +73,7 @@
         "nombre": "Beijing",
         "precio": 12000,
         "img": "/img/Terrarios/beijing.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 30cm Largo: 20cm  Ancho: 20cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -96,7 +96,7 @@
         "nombre": "Alemania",
         "precio": 10000,
         "img": "/img/Terrarios/alemania.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 30cm Largo: 20cm  Ancho: 20cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -119,7 +119,7 @@
         "nombre": "Roma",
         "precio": 6500,
         "img": "/img/Terrarios/roma.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 16cm Largo: 16cm  Ancho: 16cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -142,7 +142,7 @@
         "nombre": "Triangulo",
         "precio": 3800,
         "img": "/img/Terrarios/triangulo.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 18cm Largo: 20cm  Ancho: 5cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -165,7 +165,7 @@
         "nombre": "Recife",
         "precio": 7000,
         "img": "/img/Terrarios/recife.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 17 Largo: 13cm  Ancho: 15cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -211,7 +211,7 @@
         "nombre": "España",
         "precio": 5000,
         "img": "/img/Terrarios/espania.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 10cm Largo: 12cm  Ancho: 15cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -234,7 +234,7 @@
         "nombre": "Galápagos",
         "precio": 7000,
         "img": "/img/Terrarios/galapagos.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 17cm Largo: 20cm  Ancho: 20cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -257,7 +257,7 @@
         "nombre": "Kazajistán",
         "precio": 6500,
         "img": "/img/Terrarios/kazajistan.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 30cm Largo: 13cm  Ancho: 13cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -280,7 +280,7 @@
         "nombre": "Egipto",
         "precio": 4000,
         "img": "/img/Terrarios/egipto.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 19cm Largo: 11cm  Ancho: 11cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -303,7 +303,7 @@
         "nombre": "Bilbao",
         "precio": 8000,
         "img": "/img/Terrarios/bilbao.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 21cm Largo: 20cm  Ancho: 20cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -326,7 +326,7 @@
         "nombre": "Biósfera",
         "precio": 13000,
         "img": "/img/Terrarios/biosfera.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 35cm Largo: 35cm  Ancho: 35cm ",
         "categoria": "terrarios",
         "stock":10,
         "colorBorde":[
@@ -349,7 +349,7 @@
         "nombre": "Nueva York",
         "precio": 6000,
         "img": "/img/Lamparas/ny.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 16cm Largo: 18cm  Ancho: 18cm ",
         "categoria": "lamparas",
         "stock":10,
         "colorBorde":[
@@ -372,7 +372,7 @@
         "nombre": "París",
         "precio": 7500,
         "img": "/img/Lamparas/paris.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 25cm Largo: 16cm  Ancho: 16cm ",
         "categoria": "lamparas",
         "stock":10,
         "colorBorde":[
@@ -395,7 +395,7 @@
         "nombre": "Rusia",
         "precio": 6000,
         "img": "/img/Lamparas/rusia.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 16cm Largo: 16cm  Ancho: 16cm ",
         "categoria": "lamparas",
         "stock":8,
         "colorBorde":[
@@ -418,7 +418,7 @@
         "nombre": "Dominica",
         "precio": 10000,
         "img": "/img/LamparaColg/dominica.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 26cm Largo: 25cm  Ancho: 25cm ",
         "categoria": "lamparas",
         "stock":10,
         "colorBorde":[
@@ -441,7 +441,7 @@
         "nombre": "Fiyi",
         "precio": 12000,
         "img": "/img/LamparaColg/fiyi.jpg",
-        "medidas":"Medidas: Alto: Largo:  Ancho: ",
+        "medidas":"Medidas: Alto: 26cm Largo: 25cm  Ancho: 25cm ",
         "categoria": "lamparas",
         "stock":10,
         "colorBorde":[
