@@ -1,11 +1,12 @@
-import "./Carrito.scss"
-import { useContext } from "react"
-import { CarritoContexto } from "../../Context/CarritoContexto"
+import "./Carrito.scss";
+import { useContext } from "react";
+import { CarritoContexto } from "../../Context/CarritoContexto";
 import { BsFillTrash3Fill } from "react-icons/bs";
 import ImageAvatars from "../Avatar/Avatar";
 import CantidadesCarrito from "../CantidadesCarrito/CantidadesCarrito";
 import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import { motion } from "framer-motion";
 
 
 export const Carrito = () => {
@@ -19,15 +20,19 @@ export const Carrito = () => {
             <h1 className="carrito-titulo">A un paso de tener tu Micromundo<ImageAvatars img={"./img/Caricatura/terrario.jpg"} /></h1>
             <hr></hr>
             {
-                carrito.map((prod) => (
-                    <div className={`carrito-item ${prod.categoria === "lamparas"
+                carrito.map((prod, index) => (
+                    <motion.div 
+                    key={prod.id}
+                    index
+                    className={`carrito-item ${prod.categoria === "lamparas"
                         ? "carrito-item-rosa"
                         : "carrito-item-verde"
-
                         }
-                        
                         `
-                    } key={prod.id}>
+                    } 
+                    initial={{y:-100, opacity:0}} animate={{ y: 0, opacity:1}}
+                    transition={{duration: 2, delay: (index + 1 ) * 1 }}
+                    >
                         <img src={prod.img} alt={prod.nombre} className="carrito-img" />
                         <h3 className="carrito-nombre">{prod.nombre}</h3>
                         <span className="carrito-unitario">${prod.precio}</span>
@@ -36,7 +41,7 @@ export const Carrito = () => {
 
                         <span className="carrito-total">Total: $ {prod.precio * prod.cantidad}</span>
                         <button onClick={() => removerItem(prod.id)} className="btn btn-danger"><BsFillTrash3Fill /></button>
-                    </div>
+                    </motion.div>
                 ))
             }
             <hr></hr>

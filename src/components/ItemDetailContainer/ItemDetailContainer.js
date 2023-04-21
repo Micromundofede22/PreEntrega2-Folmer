@@ -8,41 +8,41 @@ import { dataBase } from "../../firebase/config"
 
 
 
-const ItemDetailContainer=()=>{
+const ItemDetailContainer = () => {
 
-    const[item, setItem]= useState(null)
-    const [cargando, setCargando]= useState(true)
+  const [item, setItem] = useState(null)
+  const [cargando, setCargando] = useState(true)
 
-    const{itemId}= useParams()
+  const { itemId } = useParams()
 
-    useEffect(()=>{
-        setCargando(true)
+  useEffect(() => {
+    setCargando(true)
     //   1. armar una referencia sync
-     const docRef= doc(dataBase, "productos", itemId)
+    const docRef = doc(dataBase, "productos", itemId)
     //   2. llamar a esa referencia async
-      getDoc(docRef)
-      .then((doc)=>{
+    getDoc(docRef)
+      .then((doc) => {
         setItem({
-            id: doc.id,
-            ...doc.data()
+          id: doc.id,
+          ...doc.data()
         })
       })
-      .finally(()=>{
+      .finally(() => {
         setCargando(false)
       })
-    }, [itemId])
+  }, [itemId])
 
 
-    return(
-        <div className="item-detail-container">
-            {
-                cargando
-                ? 
-                <SpinnerVerde/>
-                : <ItemDetail item={item}/>
-            }
-        </div>
-    )
+  return (
+    <div className="item-detail-container">
+      {
+        cargando
+          ?
+          <SpinnerVerde />
+          : <ItemDetail item={item} />
+      }
+    </div>
+  )
 }
 
 export default ItemDetailContainer

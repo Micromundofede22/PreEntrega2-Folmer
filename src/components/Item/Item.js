@@ -39,8 +39,8 @@ const Item = ({ item, index, categoria }) => {
             variants={cajaVariant}
         >
             <img src={item.img} className="tarjeta-img" alt={`${item.nombre}`} />
-            <h2 className='fw-bold'>{item.nombre}</h2>
-            <span className="tarjeta-precio">Precio: ${item.precio}</span>
+            <h2 className='tarjeta-titulo'>{item.nombre}</h2>
+            <span className="tarjeta-precio">Precio:<strong className="negrita">${item.precio}</strong> </span>
 
             <motion.div
                 whileHover={{ scale: 1.2 }}

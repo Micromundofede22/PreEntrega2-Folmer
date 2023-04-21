@@ -35,9 +35,19 @@
           width: 400px;
         }
 
+        .tarjeta-titulo{
+          text-shadow: 5px 5px 5px rgb(20, 105, 41);
+          font-weight: 700;
+        }
+
         .tarjeta-precio{
           font-size: 22px;
           font-weight: 600;
+          margin-bottom: 10px;
+          .negrita{
+            font-weight: bold;
+            text-shadow: 4px 4px 5px black;
+          }
         }
 
         .tarjeta-link{
@@ -74,8 +84,8 @@
           border-radius: 15%;
 
           &:hover{
-            background-color: #fe7b3e;
-            box-shadow: rgba(166, 144, 144, 0.577);
+            background-color: rgba(114, 112, 112, 0.58);
+            box-shadow: 8px 8px 10px #f3a17c;
           }
         }
       }

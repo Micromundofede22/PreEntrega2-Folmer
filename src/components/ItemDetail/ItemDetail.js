@@ -4,6 +4,7 @@ import { CarritoContexto } from "../../Context/CarritoContexto"
 import ItemCount from "../ItemCount/ItemCount"
 import Select from "../Select/Select"
 import { toast, ToastContainer, Zoom } from "react-toastify";
+import { motion } from "framer-motion"
 
 
 const ItemDetail = ({ item }) => {
@@ -35,10 +36,14 @@ const ItemDetail = ({ item }) => {
 
 
     return (
-        <div
-            className="detail-contenedor">
-            <img className="detail-img" src={item.img} alt={item.name} />
-            <div className="detail-contenedorInfo">
+        <div className="detail-contenedor">
+            <motion.img className="detail-img" src={item.img} alt={item.name}
+             initial={{x:-100, opacity:0}} animate={{ x:0, opacity:1}}
+             transition={{ duration: 2 }} />
+
+            <motion.div className="detail-contenedorInfo"
+            initial={{x:100, opacity:0}} animate={{ x:0, opacity:1}}
+            transition={{ duration: 2 }}>
                 <p className="detail-nombre">{item.nombre}</p>
                 {item.stock <= 3 && <p>Solo quedan {item.stock} unidades</p>}
                 <p className="detail-descrip">Descripción: {item.medidas}</p>
@@ -74,7 +79,7 @@ const ItemDetail = ({ item }) => {
                 }
                 <ToastContainer />
 
-            </div>
+            </motion.div>
         </div>
     )
 }
