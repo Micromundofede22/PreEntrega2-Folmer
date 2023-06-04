@@ -1,14 +1,14 @@
 import "./Inicio.scss"
 import Slider from "../Slider/Slider"
 import images from "../../exports/images"
-import Portada from "../Portada/Portada"
 import terrario  from "./terrario.jpg";
 import planta from "./planta.jpg";
 import { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ImagenesTextos from "./ImagenesTextos/ImagenesTextos";
-import { WhatsApp } from "@mui/icons-material";
+import ImagenesTextos from "./../ImagenesTextos/ImagenesTextos"
+import PortadaResponsive from "../PortadaResponsive/PortadaResponsive";
+
 
 
 const cajaVariant = {
@@ -57,10 +57,10 @@ const Inicio = () => {
 
     return (
         <div className='inicio-container'>
-            <Portada subtitulo={"Decoración y reflexión..."} />
+            <PortadaResponsive subtitulo={"Decoración y reflexión..."} />
+           
             <div className="container-img">
                 <div className="text-container">
-                    {/* <TextoAnimadoPalabras text={`A tu casa no le puede faltar un Micromundo...`} /> */}
                     <motion.p className="text"
                         ref={ref}
                         custom={{ delay: 0.3 }}
@@ -87,7 +87,6 @@ const Inicio = () => {
             <ImagenesTextos text1={"Llevate gratis"} img={planta} text2={"un libro para reflexionar"} />
 
             </div>
-
     )
 }
 

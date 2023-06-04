@@ -1,15 +1,21 @@
-.boton{
-    border: 0 ;
-    border-radius: 5px;
-    height: 30px;
-    box-shadow: 10px 5px 10px black;
-
-    &-lamparas{
-         background-color: #f3a17c;
-     }
-     
-     &-terrarios{
-         background-color: rgba(26,137,63,255);
-     }
+.itemCount-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .boton{
+        border: 0 ;
+        border-radius: 5px;
+        height: 30px;
+        box-shadow: 10px 5px 10px black;
+    
+        &-lamparas{
+             background-color: #f3a17c;
+         }
+         
+         &-terrarios{
+             background-color: rgba(26,137,63,255);
+         }
+    }
 }
 

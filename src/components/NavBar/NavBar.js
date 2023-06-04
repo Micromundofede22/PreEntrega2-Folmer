@@ -2,15 +2,13 @@ import "./NavBar.scss"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import CarritoMui from "../Carrito/CarritoMui"
-import { useContext } from "react"
-import { LoginContext } from "../../Context/LoginContext"
+import User from "../User/User"
 
 
 
 
 export const NavBar = () => {
 
-    const {user, logout}= useContext(LoginContext)
 
     return (
         <header className="header">
@@ -38,10 +36,7 @@ export const NavBar = () => {
 
             </div>
             <hr className="m-0"/>
-            <div className="user">
-                <h6 className="m-0">Hola Micromundista {user.email}</h6>
-                <button className="btn btn-online fw-bold m-0" onClick={logout}>Cerrar sesión</button>
-            </div>
+           <User/>
         </header>
     )
 }

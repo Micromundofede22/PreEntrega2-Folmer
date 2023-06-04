@@ -54,6 +54,7 @@ const Item = ({ item, index, categoria }) => {
                     : "tarjeta-link btn"
                  }><FaExternalLinkSquareAlt className="mx-2 my-2" />Ver más</Link>
 
+
             </motion.div>
         </motion.div>
     )

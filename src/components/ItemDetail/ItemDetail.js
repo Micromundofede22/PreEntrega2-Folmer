@@ -37,6 +37,7 @@ const ItemDetail = ({ item }) => {
 
     return (
         <div className="detail-contenedor">
+
             <motion.img className="detail-img" src={item.img} alt={item.name}
              initial={{x:-100, opacity:0}} animate={{ x:0, opacity:1}}
              transition={{ duration: 2 }} />
@@ -44,9 +45,11 @@ const ItemDetail = ({ item }) => {
             <motion.div className="detail-contenedorInfo"
             initial={{x:100, opacity:0}} animate={{ x:0, opacity:1}}
             transition={{ duration: 2 }}>
+
                 <p className="detail-nombre">{item.nombre}</p>
+                
                 {item.stock <= 3 && <p>Solo quedan {item.stock} unidades</p>}
-                <p className="detail-descrip">Descripción: {item.medidas}</p>
+                <p className="detail-descrip"><span className="fw-bold">Descripción:</span> {item.medidas}</p>
                 <p className="detail-precio">Precio: ${item.precio}</p>
 
                 <Select

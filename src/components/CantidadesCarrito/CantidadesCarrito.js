@@ -19,7 +19,7 @@ const CantidadesCarrito = ({ cantidad, id, stock }) => {
                 className="btn icon-restar"
                 disabled={cantidad === 1}
             >
-                <RemoveCircleSharpIcon />
+                <RemoveCircleSharpIcon className="fs-5"/>
             </button>
 
             <span className="carrito-cantidad">Cantidad: {cantidad} </span>
@@ -28,7 +28,7 @@ const CantidadesCarrito = ({ cantidad, id, stock }) => {
                 onClick={() => { editarCantidad(id, 1) }}
                 className="btn icon-sumar"
                 disabled={cantidad === stock}>
-                <AddCircleSharpIcon />
+                <AddCircleSharpIcon className="fs-5" />
             </button>
 
             <ToastContainer />

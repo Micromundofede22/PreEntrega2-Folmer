@@ -19,9 +19,8 @@ const ItemCount = ({ max, cantidad, setCantidad, agregar, categoria }) => {
 
 
     return (
-        <div>
+        <div className="itemCount-Container">
             <div className="d-flex">
-
                 <button
                     onClick={handleRestar}
 

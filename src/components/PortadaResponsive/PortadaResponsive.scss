@@ -1,0 +1,81 @@
+.portada-contenedor {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 22vh 0 0 0;
+    background-image: url("./../../assets/portada.jpg");
+    background-size: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contenedor-img {
+        margin-top: 2rem;
+    }
+
+    .portada-img {
+        width: 17rem;
+    }
+
+    .portada-titulo {
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 0;
+
+        &-vaquita {
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .portada-subt {
+        color: wheat;
+        font-size: 1.4rem;
+        font-style: italic;
+        margin: 0;
+    }
+}
+
+
+
+    @media screen and (min-width:900px) {
+        .portada-contenedor {
+            height: 100vh;
+            margin: 15vh 0 0 0;
+            background-image: url("./../../assets/portada.jpg");
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .contenedor-img {
+                margin-top: 3rem;
+            }
+        
+            .portada-img {
+                width: 360px;
+            }
+        
+            .portada-titulo {
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-bottom: 0;
+        
+                &-vaquita {
+                    font-size: 1.6rem;
+        
+                }
+            }
+        
+            .portada-subt {
+                color: wheat;
+                font-size: 2rem;
+                font-style: italic;
+                margin: 0;
+            }
+        }
+        
+    }

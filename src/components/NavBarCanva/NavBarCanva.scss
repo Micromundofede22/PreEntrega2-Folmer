@@ -1,0 +1,38 @@
+.bg {
+    background-color: #1a893f;
+    padding: 1rem 2rem 1rem 2rem;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.offcanvas-header{
+    background-color: #1a893f;
+    .offcanvas-title{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 700;
+    }
+}
+
+.offcanvas-body{
+    background-color: #f7f7f7;
+    font-size: 1rem;
+}
+
+.navbar__link {
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin-top: 0.8rem;
+        font-weight: 700;
+        color: rgb(27, 25, 25);
+        text-transform: uppercase;
+        cursor: pointer;
+       
+
+        
+    }
+
+    .navbar__link:hover{
+        text-decoration: none;
+        color: #1a893f;
+        text-shadow: 5px 5px 8px rgb(0, 0, 0);
+    }

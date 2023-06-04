@@ -1,19 +1,44 @@
-.cantidad-contenedor{
+.cantidad-contenedor {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 
-    .carrito-cantidad{
-        font-size: 1.5rem;
+    .carrito-cantidad {
+        font-size: 1rem;
         font-weight: 600;
     }
 
-    .icon-restar{
-    background-color: #1a893f41;
+    .icon-restar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a893f41;
+        width: 15px;
     }
 
-    .icon-sumar{
+    .icon-sumar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #1a893f78;
+        width: 15px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .cantidad-contenedor {
+
+        .carrito-cantidad {
+            font-size: 1.5rem;
+        }
+
+        .icon-restar {
+            background-color: #1a893f41;
+        }
+
+        .icon-sumar {
+            background-color: #1a893f78;
+        }
     }
 }

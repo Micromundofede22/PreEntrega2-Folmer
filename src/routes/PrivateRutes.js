@@ -1,5 +1,5 @@
 import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
-import { NavBar } from '../components/NavBar/NavBar';
+// import { NavBar } from '../components/NavBar/NavBar';
 import Footer from "../components/Footer/Footer";
 import Inicio from "../components/Inicio/Inicio";
 import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer";
@@ -8,15 +8,15 @@ import OrdenCompra from "../components/OrdenCompra/OrdenCompra";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Whatsapp from '../components/Whatsapp/Whatsapp';
 import caricatura from "./../assets/terrario.jpg"
-
-
+import NavBarCanva from '../components/NavBarCanva/NavBarCanva';
 
 
 const PrivateRutes = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
+            <NavBarCanva/>
             <Whatsapp img={caricatura}/>
         
             <Routes>

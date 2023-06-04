@@ -1,6 +1,5 @@
-
-import Portada from "../Portada/Portada"
 import Item from "../Item/Item"
+import PortadaResponsive from "../PortadaResponsive/PortadaResponsive"
 
 
 
@@ -8,8 +7,8 @@ const ItemList = ({ datosProd, categoriaSub, categoria }) => {
 
     return (
         <div >
-
-            <Portada subtitulo={categoriaSub} />
+            
+            <PortadaResponsive subtitulo={categoriaSub} />
 
             <div className='list-container'>
                 <div className='tarjeta-cont'>

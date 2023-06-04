@@ -76,8 +76,6 @@ const OrdenCompra = () => {
         }
     }
 
-    
-
     if (ordenId) {
         return (
             
@@ -95,10 +93,9 @@ const OrdenCompra = () => {
     }
 
 
-
-
     return (
         <div className="orden-contenedor">
+
             <h2 className="orden-titulo">Ingresa tus datos</h2>
             <hr />
 

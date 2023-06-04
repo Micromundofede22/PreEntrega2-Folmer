@@ -3,9 +3,12 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { useMediaQuery } from "@mui/material";
 
 
 function Footer() {
+
+    const isDesktop= useMediaQuery("(min-width:900px)")
 
     const[color, setColor]= useState("darkgreen");
 
@@ -36,8 +39,12 @@ function Footer() {
                     <a className="footer-redes__link" href="https://wa.pe/Micromundo"><FaWhatsapp /></a>
                 </div>
                 </div>
-
-                <p className="footer-text">Somos decoración y reflexión...</p>
+                {
+                    isDesktop
+                    ?<p className="footer-text">Somos decoración y reflexión...</p>
+                    : <p></p>
+                }
+                
 
             </div>
 

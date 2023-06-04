@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20vh;
     width: 100%;
     background-image: url("./../../../public/img/Fondos/fondoindex.jpg");
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 
     .carrito-titulo {
@@ -12,8 +13,9 @@
         flex-direction: row;
         align-items: center;
         margin-top: 20px;
-        font-weight:900;
-        background-image: linear-gradient(to right, #020202, #0ea418);
+        font-weight: 900;
+        font-size: 2rem;
+        background-image: linear-gradient(to right, #020202,#1a893f);
         background-clip: text;
         color: transparent;
     }
@@ -21,10 +23,10 @@
     .carrito-item {
         display: flex;
         flex-direction: row;
-        width: 80%;
-        justify-content:space-between;
+        width: 90%;
+        justify-content: space-between;
         align-items: center;
-        margin: 2%;
+        margin: 0 0 5% 0;
         border-radius: 10%;
         box-shadow: 5px 15px 10px black;
 
@@ -39,32 +41,32 @@
 
 
         .carrito-img {
-            width: 250px;
+            width: 20vw;
             border-radius: 10%;
             box-shadow: 10px 10px 30px black;
-            
-
         }
 
         .carrito-nombre {
             margin-left: 1%;
             font-weight: 700;
+            font-size: 1.2rem;
+            text-shadow: 3px 3px 6px #020202;
         }
 
         .carrito-unitario {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
+            text-shadow: 3px 3px 6px #020202;
         }
 
-
-
         .carrito-total {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 600;
+            text-shadow: 3px 3px 6px #020202;
         }
     }
 
-    .boton{
+    .boton {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,20 +81,112 @@
         font-size: 2rem;
         font-weight: 700;
         color: red;
+        text-shadow: 3px 3px 6px black;
     }
 
-    .boton-terminar{
+    .boton-terminar {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:#1a893f;
+        background-color: #1a893f;
         margin-bottom: 20px;
         color: white;
         font-weight: 900;
         box-shadow: 5px 5px 5px black;
 
-        &:hover{
+        &:hover {
             background-color: #020202;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .carrito-contenedor {
+       
+    
+        .carrito-titulo {
+            font-size: 2.5rem;
+        }
+    
+        .carrito-item {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2%;
+            border-radius: 10%;
+            box-shadow: 5px 15px 10px black;
+    
+            &-verde {
+                background-color: #1a893f41;
+            }
+    
+            &-rosa {
+                background-color: #f3a27c43;
+            }
+    
+    
+    
+            .carrito-img {
+                width: 250px;
+                border-radius: 10%;
+                box-shadow: 10px 10px 30px black;
+            }
+    
+            .carrito-nombre {
+                margin-left: 1%;
+                font-weight: 700;
+                font-size: 1.6rem;
+                text-shadow: 3px 3px 6px #020202;
+            }
+    
+            .carrito-unitario {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+    
+    
+    
+            .carrito-total {
+                font-size: 1.5rem;
+                font-weight: 600;
+               
+            }
+        }
+    
+        .boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 900;
+        }
+    
+        .carrito-totalcompra {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: red;
+        }
+    
+        .boton-terminar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a893f;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 900;
+            box-shadow: 5px 5px 5px black;
+    
+            &:hover {
+                background-color: #020202;
+            }
         }
     }
 }

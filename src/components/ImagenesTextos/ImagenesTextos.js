@@ -67,9 +67,9 @@ const ImagenesTextos = ({text1, img, text2 }) => {
 
     return (
        
-            <div className="container-img">
-                <div className="text-container">
-                    <motion.p className="text"
+            <div className="container_img">
+                <div className="text_container">
+                    <motion.p className="text_"
                         ref={ref}
                         custom={{ delay: 0.3 }}
                         initial="izq"
@@ -85,12 +85,12 @@ const ImagenesTextos = ({text1, img, text2 }) => {
                     animate={control}
                     variants={cajaVariant} >
 
-                    <img className="img-inicio" src={img} alt="caricatura"/>
+                    <img className="img_inicio" src={img} alt="caricatura"/>
 
                 </motion.div>
 
-                <div className="text-container">
-                    <motion.p className="text"
+                <div className="text_container">
+                    <motion.p className="text_"
                         ref={ref}
                         custom={{ delay: 0.3 }}
                         initial="derecha"
