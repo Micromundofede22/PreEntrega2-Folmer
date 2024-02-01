@@ -17,9 +17,9 @@ const AppRouter = () => {
             // {
             //     user.logged
             //         ? <PrivateRutes/>
-                    // : 
-        <PublicRutes/>
+            //         : 
             // }
+        <PublicRutes/>
 
         </BrowserRouter>
     )
